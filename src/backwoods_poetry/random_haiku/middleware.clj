@@ -63,17 +63,20 @@
     (when (not (empty? xs))
       (rand-nth (word-by-syllable length pairs)))))
 
+(defn make-reasonable-by
+  [max length]
+  (dif max length))
 
 (defn short-line
   [max pairs]
-  (let [x (rand-syllable max)]
+  (let [x (rand-syllable (make-reasonable-by max 1))]
     (if (== x max)
       [(get-word x pairs)]
       [(get-word x pairs) (get-word (dif max x) pairs)])))
 
 (defn long-line
   [max pairs]
-  (let [x (dif max 2) y (rand-syllable (dif max 2))]
+  (let [x (make-reasonable-by max 2) y (rand-syllable (make-reasonable-by max 2))]
     (if (== (+ x y) max)
       [(get-word x pairs) (get-word y pairs)]
       (if (< (+ x y) max)
