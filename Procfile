@@ -1,1 +1,1 @@
-web: lein run -m backwoods-poetry.core 7777
+web: java $JVM_OPTS -jar target/backwoods-poetry-standalone.jar -m backwoods-poetry.core

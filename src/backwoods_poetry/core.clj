@@ -10,6 +10,7 @@
 (def handler
   (handler/site r/routes))
 
-(defn -main [PORT]
-  (jetty/run-jetty handler {:port (parse-int PORT)}))
+(defn -main []
+  (let [port (parse-int (or (System/getenv "PORT") "777"))]
+    (jetty/run-jetty handler {:port port :join? false})))
 
