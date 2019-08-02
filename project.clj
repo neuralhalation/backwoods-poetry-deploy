@@ -12,7 +12,7 @@
                  [hiccup "1.0.5"],
                  [compojure "1.5.1"],
                  [cheshire "5.8.1"]]
-  :main ^:skip-aot backwoods-research.core
+  :main ^:skip-aot backwoods-poetry.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
   :ring {:handler backwoods-poetry.core/handler}
