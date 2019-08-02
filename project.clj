@@ -13,6 +13,7 @@
                  [compojure "1.5.1"],
                  [cheshire "5.8.1"]]
   :main ^:skip-aot backwoods-poetry.core
+  :min-lein-version "2.0.0"
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
   :ring {:handler backwoods-poetry.core/handler}
