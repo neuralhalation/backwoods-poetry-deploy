@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -jar target/backwoods-poetry-standalone.jar -m backwoods-poetry.core
+web: lein ring server
