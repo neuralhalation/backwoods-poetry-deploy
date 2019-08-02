@@ -7,6 +7,6 @@
 (def handler
   (handler/site r/routes))
 
-(defn -main []
-  (jetty/run-jetty handler {:port 3000}))
+(defn -main [PORT]
+  (jetty/run-jetty handler {:port PORT}))
 

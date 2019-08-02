@@ -1,1 +1,1 @@
-web: lein run -m backwoods-poetry.core
+web: lein run -m backwoods-poetry.core 7777
