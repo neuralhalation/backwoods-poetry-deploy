@@ -1,5 +1,4 @@
 (ns backwoods-poetry.core
-  (:gen-class)
   (:require [backwoods-poetry.routes :as r]
             [compojure.handler :as handler]
             [ring.adapter.jetty :as jetty]))

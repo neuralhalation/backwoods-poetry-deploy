@@ -17,5 +17,7 @@
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}}
   :ring {:handler backwoods-poetry.core/handler}
-  :plugins [[lein-ring "0.12.1"]])
+  :plugins [[lein-ring "0.12.1"]]
+  :uberjar-name "backwoods-poetry-standalone.jar")
+
 

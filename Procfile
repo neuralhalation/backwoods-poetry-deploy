@@ -1,0 +1,1 @@
+web: java $JVM_OPTS -cp target/backwoods-poetry-standalone.jar clojure.main -m backwoods-poetry.core
